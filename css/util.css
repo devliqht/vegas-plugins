@@ -1,0 +1,196 @@
+/* reusable css elements will be placed here */
+/* ------------------ */
+:root {
+    --darker: #181818;
+    --dark: #212121;
+    --light: #EFEFEF;
+    --lighter: #FFFFFF;
+    --green: #3AA74C;
+    --timeline: #d9e0e2;
+    --hgradient: linear-gradient(315deg, #c03cff 0%, #784BA0 50%, #2B86C5 100%);
+    --intro: linear-gradient(30deg, #21D4FD 0%, #B721FF 100%);
+    --fb: #3b5998;
+    --dc: #7289da;
+    --ig: #C13584;
+    /*url("../assets/bg/bg.jpg");*/
+    /* linear-gradient(315deg, #c03cff 0%, #784BA0 50%, #2B86C5 100%); */
+}
+/* ------------------ */
+
+
+/* ------------------ */
+.font--montserrat { 
+    font-family: 'Montserrat', sans-serif;
+}
+.font--quicksand { 
+    font-family: 'Quicksand', sans-serif;
+}
+/* ------------------ */
+
+
+/* ------------------ */
+.gradient_underline { 
+    color: #fff;
+    text-decoration: none; 
+    display: inline-block;
+    position: relative;
+}
+.gradient_underline:after {    
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background-image: var(--hgradient);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.gradient_underline:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+/* ------------------ */
+
+
+/* ------------------ */
+.gradient_text_color {
+    background: var(--hgradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+} 
+/* ------------------ */
+
+
+/* ------------------ */
+.padding {
+    padding-bottom: 18px; padding-top: 18px;
+}
+.padding-sm {
+    padding: 10px;
+}
+.padding-md {
+    padding: 15px;
+}
+.padding-lg {
+    padding: 20px;
+}
+.padding-xlg {
+    padding: 30px;
+}
+.padding-xxlg {
+    padding: 40px;
+}
+.padding-xxxlg {
+    padding: 55px;
+}
+.center_content {
+    justify-content: center;
+}
+/* ------------------ */
+
+
+/* ------------------ */
+.vertical {
+    height: 100%;
+    width: 5px;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+}
+.horizontal {
+    height: 5px;
+    width: 100%;
+    border: none;
+    background-color: #D9AFD9;
+    background-image: var(--hgradient);
+    border-radius: 10px;
+}
+/* ------------------ */
+
+
+/* ------------------ */
+.title_text {
+    color: var(--dark);
+    font-size: 40px;
+    transition: 0.4s;
+    cursor: default;
+    letter-spacing: -0.02em;
+    width: fit-content;
+} 
+.subtext-title {
+    color: var(--dark);
+    font-size: 20px;
+    transition: 0.4s;
+    cursor: default;
+    letter-spacing: -0.02em;
+} 
+.title_text-rev {
+    color: var(--dark);
+    font-size: 40px;
+    transition: 0.4s;
+    cursor: default;
+    letter-spacing: -0.02em;
+} 
+.subtext-title-rev {
+    color: var(--dark);
+    font-size: 20px;
+    transition: 0.4s;
+    cursor: default;
+    letter-spacing: -0.02em;
+} 
+/* ------------------ */
+
+
+/* ------------------ */
+button {
+    font-size: 1em;
+    background: var(--hgradient);
+    color: #fff;
+    border: white;
+    padding: 0.85em 0.75em;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-family: 'Montserrat';
+    width: 220px;
+}
+button:hover {
+    color: #333;
+}
+button::after {
+    content: "";
+    background: #ecf0f1;
+    position: absolute;
+    z-index: -1;
+    padding: 0.85em 0.75em;
+    display: block;
+}
+button[class^="link"]::after {
+    transition: all 0.5s ease;
+  }
+button[class^="link"]:hover::after {
+    transition: all 0.5s ease-out;
+}
+button.link_button::after {
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-30deg) scale(0, 1);
+}
+button.link_button:hover::after {
+    transform: skewX(-30deg) scale(1, 1);
+}
+/* ------------------ */
+
+/* ------------------ */
+i {
+    transition: 1s;
+}
+i:hover {
+    color: #2B86C5;
+}
+/* ------------------ */
+

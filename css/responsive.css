@@ -1,0 +1,138 @@
+/* All responsive CSS code will be placed here. */
+
+@media screen and (max-width: 884px) /* Recommended width for phones. */ {
+    grid-display {
+        display: grid;
+        grid-template-columns: 0fr 1fr;
+        grid-template-rows: 0fr 2fr 2fr 2fr 2fr 2fr 1fr;
+        grid-template-areas:
+        "sidebar header"
+        "sidebar page"
+        "sidebar page"
+        "sidebar page"
+        "sidebar page"
+        "sidebar page"
+        "sidebar page";
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* ------------------ */
+    .navbar-flex {
+        padding-top: 17px;
+        flex-direction: row;
+        justify-content: left;
+    }
+    .navbar-flex > a {
+        display: none;
+    }
+    .navbar-flex > .responsive_sidebar_icon {
+
+    }
+    .dbtc {
+        display: none;
+    }
+    /* ------------------ */
+
+    
+    /* ------------------ */
+    .firstpart {
+        height: 300px;
+    }
+    .intro {
+        flex-direction: column;
+        top: 42%;
+    } 
+    .intro > .intro_text   {
+        font-size: 29px;
+    } 
+    .other_half {
+        display: none;
+    }
+    .intro p.clickable {
+        font-size: 19px;
+    }
+    /* ------------------ */
+
+
+    /* ------------------ */
+    .details_wrapper {
+        flex-direction: column;
+        padding: 55px 25px 55px 7px;
+    }
+    .details_0, .details_1, .details_2 {
+        padding-left: 1em;
+        min-width: 1px;
+    }
+    .details_img {
+        min-width: 350px;
+    }
+    /* ------------------ */
+
+
+    /* ------------------ */
+    .contacts_wrapper {
+        padding: 0 2px 3px 0;
+    }
+    .container-wrapper {
+        flex-direction: column;
+        padding: 10px 0 10px 17px;
+    }
+    .links-wrapper {
+        padding: 10px 0 10px 5%;
+        flex-direction: column;
+    }
+    /* ------------------ */
+
+
+    /* ------------------ */
+    button {
+        font-size: 0.6em;
+    }
+    .theme-switch-wrapper > p {
+        display: none;
+    }
+    .theme-switch-wrapper {
+        margin-bottom: 17px;
+    }
+    /* ------------------ */
+
+
+
+    .disappear {
+        display:none;
+    }
+    .about_section {
+        height: 340px;
+    }
+
+    input[type=text] {
+        display: none;
+    }
+}
+
+/* Desktop Format */
+/* Only desktop screens can see this */
+@media only screen and (min-width: 884px) {
+    .navbar-flex > .responsive_sidebar_icon {
+        display: none;
+    }
+
+    /* ------------------ */
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #181818; 
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: white;
+        border-radius: 15px;
+    }
+    /* ------------------ */
+
+}
+
+
